@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Tag</title>
+</head>
+<frameset src= "30%,40%,30%">
+    <frame src="frame1.html">
+    <frame src="frame2.html">
+    <frame src="frame3.html">
+</frameset>
+</html>
