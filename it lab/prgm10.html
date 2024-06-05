@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function addition(){
+			a=Number(my_cal.first.value);
+			b=Number(my_cal.second.value);
+			c=a+b;
+			my_cal.total.value=c;
+		}
+		function subtraction(){
+			a=Number(my_cal.first.value);
+			b=Number(my_cal.second.value);
+			c=a-b;
+			my_cal.total.value=c;
+		}
+		function multiplication(){
+			a=Number(my_cal.first.value);
+			b=Number(my_cal.second.value);
+			c=a*b;
+			my_cal.total.value=c;
+		}
+		
+		function division(){
+			a=Number(my_cal.first.value);
+			b=Number(my_cal.second.value);
+			c=a/b;
+			my_cal.total.value=c;
+		}
+	</script>
+<body bgcolor="skyblue">
+<form name= "my_cal">
+<br><br><br>
+number 1:<input type="text" name="first">	
+<br><br><br>	
+number 2:<input type="text" name="second">	
+<br><br><br>	
+<input type="button" value="ADD" onclick="addition();">
+<input type="button" value="SUB" onclick="subtraction();">
+<input type="button" value="MUL" onclick="multiplication();">
+<input type="button" value="DIV" onclick="division();">
+<br><br><br>	
+Result:<input type="text" name="total">
+</body>
+</html>
+
+
+		
+			-

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Validate Text Boxes</title>
+<script>
+    function validate()
+    {
+        var myArray = new Array();
+        for(var i=0; i<myForm.length; i++)
+        {
+            if(myForm.elements[i].value.length==0)
+            {
+                myArray.push(myForm.elements[i].name);
+            }
+        }
+        if(myArray.length!=0)
+        {
+            alert("The following text boxes are empty:\n"+myArray);
+        }
+    }
+</script>
+</head>
+<body bgcolor="linen">
+    <form name="myForm">
+        <br><br><br>
+        Name:<input type="text" name="Name">
+        <br><br><br>
+        Class:<input type="text" name="Class">
+        <br><br><br>
+        Age:<input type="text" name="Age">
+        <br><br><br>
+        <input type="button" value="check" onclick="validate()">
+    </form>
+</body>
+    		
