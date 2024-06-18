@@ -38,4 +38,12 @@ def primMST(c, n):
                parent[v] = u
                key[v] = c[u][v]
      totalweight=printMST (parent, c, n)
-     
+
+ 
+#main code
+n=int(input("Enter the number of vertices:"))
+c=[]
+print("Enter the cost adjacency matrix:")
+for i in range(n):
+    c.append(list(map(int,input().split())))
+primmest(c,n)
